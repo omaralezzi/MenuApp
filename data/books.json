@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "no": "001",
+      "title": "Dracula",
+      "genre": "Gothic",
+      "author": "Bram Stoker",
+      "price": "22.00",
+      "year": "1897"
+    },
+    {
+      "no": "006",
+      "title": "The Great Gatsby",
+      "genre": "Classic",
+      "author": "F. Scott Fitzgerald",
+      "price": "12.00",
+      "year": "1925"
+    },
+    {
+      "no": "008",
+      "title": "The Trial",
+      "genre": "Classic",
+      "author": "Franz Kafka",
+      "price": "13.00",
+      "year": "1925"
+    },
+    {
+      "no": "009",
+      "title": "The Metamorphosis",
+      "genre": "Classic",
+      "author": "Franz Kafka",
+      "price": "9.00",
+      "year": "1915"
+    },
+    {
+      "no": "004",
+      "title": "1984",
+      "genre": "Dystopian",
+      "author": "George Orwell",
+      "price": "14.00",
+      "year": "1949"
+    },
+    {
+      "no": "007",
+      "title": "To Kill a Mockingbird",
+      "genre": "Classic",
+      "author": "Harper Lee",
+      "price": "15.00",
+      "year": "1960"
+    },
+    {
+      "no": "010",
+      "title": "Harry Potter 1",
+      "genre": "Fantasy",
+      "author": "J. K. Rowling",
+      "price": "19.00",
+      "year": "1997"
+    },
+    {
+      "no": "003",
+      "title": "The Hobbit",
+      "genre": "Fantasy",
+      "author": "J. R. R. Tolkien",
+      "price": "18.00",
+      "year": "1937"
+    },
+    {
+      "no": "002",
+      "title": "Pride and Prejudice",
+      "genre": "Classic",
+      "author": "Jane Austen",
+      "price": "16.00",
+      "year": "1813"
+    },
+    {
+      "no": "005",
+      "title": "Frankenstein",
+      "genre": "Horror",
+      "author": "Mary Shelley",
+      "price": "20.00",
+      "year": "1818"
+    }
+  ]
+}
