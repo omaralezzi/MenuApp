@@ -25,6 +25,9 @@ class MainApp(tk.Tk):
         self.BG = "#F4F4F4"
         self.FG = "#111111"          # ✅ this fixes your error (app.FG exists)
 
+        # logo colour (blue text)
+        self.LOGO_FG = "#0000FF"
+
         # optional aliases (so old/new pages both work)
         self.TEXT = self.FG
 
@@ -170,17 +173,26 @@ class MainApp(tk.Tk):
     # Sidebar
     # -------------------------
     def _build_sidebar(self):
-        title = tk.Label(
-            self.sidebar,
-            text="Library",
-            bg=self.SIDEBAR_BG,
-            fg=self.FG,
-            font=("Arial", 20, "bold"),
-            padx=18,
-            pady=20,
-            anchor="w"
-        )
-        title.pack(fill="x")
+        # Static book drawing on canvas (no animation)
+        class BookCanvas(tk.Canvas):
+            def __init__(self, parent, **kw):
+                super().__init__(parent, width=80, height=80, bg=parent['bg'], highlightthickness=0, **kw)
+                self._draw_book()
+
+            def _draw_book(self):
+                # simple closed book with spine and minor shading
+                # outer cover
+                self.create_rectangle(15, 20, 65, 60, fill='white', outline='black')
+                # spine shading
+                self.create_polygon(15,20, 13,22, 13,58, 15,60, fill='#ccc', outline='#ccc')
+                # cover texture lines
+                for x in range(20, 60, 8):
+                    self.create_line(x, 24, x, 56, fill='#888')
+                # a small book icon or text in centre
+                self.create_text(40, 40, text='📚', font=('Arial', 24))
+
+        book_widget = BookCanvas(self.sidebar)
+        book_widget.pack(padx=18, pady=20, fill='x')
 
         self.nav_labels = {}
 
