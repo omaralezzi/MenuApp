@@ -1,0 +1,90 @@
+%PDF-1.1
+1 0 obj << /Type /Catalog /Pages 2 0 R >> endobj
+2 0 obj << /Type /Pages /Kids [3 0 R] /Count 1 >> endobj
+3 0 obj << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >> endobj
+4 0 obj << /Length 2247 >> stream
+BT
+/F1 12 Tf
+1 0 0 1 72 720 Tm
+(Library Manager - Application Summary) Tj
+1 0 0 1 72 706 Tm
+() Tj
+1 0 0 1 72 692 Tm
+(Overview:) Tj
+1 0 0 1 92 678 Tm
+(A simple desktop application built using Tkinter for managing a personal library of books.) Tj
+1 0 0 1 92 664 Tm
+(Users can view, add, edit, sort, import, and export book records stored in a JSON file.) Tj
+1 0 0 1 72 650 Tm
+() Tj
+1 0 0 1 72 636 Tm
+(Core Components:) Tj
+1 0 0 1 92 622 Tm
+(• app.py: Main application window, styling, and navigation logic.) Tj
+1 0 0 1 92 608 Tm
+(• models.py: Book dataclass and serialization helpers.) Tj
+1 0 0 1 92 594 Tm
+(• storage.py: Handles loading/saving JSON, CSV import, backups, and defaults.) Tj
+1 0 0 1 92 580 Tm
+(• pages/*: GUI pages for listing, editing, and sorting books using Tkinter widgets.) Tj
+1 0 0 1 72 566 Tm
+() Tj
+1 0 0 1 72 552 Tm
+(Data Storage:) Tj
+1 0 0 1 92 538 Tm
+(Books are persisted in 'data/books.json'. Storage class normalizes and backs up data.) Tj
+1 0 0 1 92 524 Tm
+(Supports CSV import with safe backup to temp or user-specified location.) Tj
+1 0 0 1 72 510 Tm
+() Tj
+1 0 0 1 72 496 Tm
+(Features:) Tj
+1 0 0 1 92 482 Tm
+(• Book List page shows all records in a Treeview with search capabilities.) Tj
+1 0 0 1 92 468 Tm
+(• Edit Books page allows creating, updating, deleting, and restoring default samples.) Tj
+1 0 0 1 92 454 Tm
+(• Sort Books page can re-order the list and save the new sequence.) Tj
+1 0 0 1 92 440 Tm
+(• Sidebar navigation for switching pages, with simple book icon graphic.) Tj
+1 0 0 1 92 426 Tm
+(• Theming and styling tailored for macOS with ttk and custom colors.) Tj
+1 0 0 1 72 412 Tm
+() Tj
+1 0 0 1 72 398 Tm
+(Setup & Run:) Tj
+1 0 0 1 92 384 Tm
+(Execute 'python app.py' from workspace root. Requires Python 3.x and Tkinter.) Tj
+1 0 0 1 72 370 Tm
+() Tj
+1 0 0 1 72 356 Tm
+(Repository Structure:) Tj
+1 0 0 1 92 342 Tm
+(- app.py) Tj
+1 0 0 1 92 328 Tm
+(- main.py \(proxy to app\)) Tj
+1 0 0 1 92 314 Tm
+(- models.py, storage.py) Tj
+1 0 0 1 92 300 Tm
+(- pages/book_list_page.py, book_edit_page.py, book_sort_page.py) Tj
+1 0 0 1 92 286 Tm
+(- data/books.json \(initially may be empty\)) Tj
+1 0 0 1 72 272 Tm
+() Tj
+1 0 0 1 72 258 Tm
+(This summary fits on a single page using standard letter size.) Tj
+ET
+endstream endobj
+5 0 obj << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >> endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002540 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+2610
+%%EOF
